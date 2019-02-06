@@ -1,0 +1,80 @@
+
+
+
+body 
+{ 
+font-family: 'Nunito', sans-serif;
+    color:#484047; 
+}
+
+form 
+{ 
+    max-width:300px; 
+/*     margin:50px 0px 0px 0px ;  */
+    margin:50px auto; 
+/*     background-color:#f4f4f4; */
+    background-image:url("https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwi3--Pct4TgAhXG6qQKHXAgCd0QjRx6BAgBEAU&url=http%3A%2F%2Fwww.animalplanet.com%2Ftv-shows%2Ftoo-cute%2Fphotos%2Fabsolutely-adorable-kitten-photos%2F&psig=AOvVaw0yRJRsaWouozN9DsHw80tR&ust=1548351168809082"); 
+    border-radius:10px;
+    padding:20px; 
+    border:solid grey 1px; 
+}
+
+input[type=text], input[type=password], input[type=email]  
+
+{ 
+    background:rgba(255,255,255,0.2); 
+    border:none; 
+    width:100%; 
+    padding:15px auto; 
+    margin:5px auto; 
+    box-shadow: 0 -1px 0 0 rgba(0,0,0,0.83) inset; 
+}
+
+textarea, 
+
+{ 
+width:100%; 
+    padding:15px auto; 
+    margin:10px auto;
+    background-color:#e8eeef;
+}
+
+
+/* input[type=submit] { 
+width:100%; 
+    padding:15px auto; 
+/*     margin:10px auto;  */
+
+} */
+
+
+.button { 
+
+    padding:19px 39px 18px 39px; 
+    color:#fff; 
+    background-color:#4dc970; 
+    font-size:1.2em; 
+    text-align:center; 
+    font-style:normal; 
+    border-radius:5px; 
+    width:80%;
+    border:1px solid #3ca162;
+    border-width:1px 1px 3px; 
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.4) inset;
+    margin-bottom:10px; 
+    
+    
+
+
+
+}
+
+
+label {margin-bottom:8px; 
+display:block  }
+
+
+
+input[type=text]:focus{
+  outline: 2px solid orange;     /* oranges! yey */
+}
