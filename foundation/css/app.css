@@ -1,0 +1,49 @@
+								/*GENERAL*/
+
+.wrap
+{
+	width:90%;
+	max-width: 1440px;
+	margin: 0px auto;
+}
+
+
+ 								/*NAVIGATION*/
+ 								
+.navigation
+{
+	background-color: #e6e6e6; 
+}
+
+
+
+
+ 								/*HERO*/			
+
+.hero 
+{ 
+		background-color: #999999; 
+		padding: 80px 0px; 
+		height:500px;
+}
+
+/*.button.success 
+{ 
+		background-color: purple;
+		color: #ffffff;
+}*/
+
+.button 
+{ 
+		/*display: block; */
+}
+
+
+
+ 								/*BODY*/			
+
+
+
+
+
+ 								/*FOOTER*/			
