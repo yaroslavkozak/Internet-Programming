@@ -8,13 +8,42 @@
 }
 
 
- 								/*NAVIGATION*/
+ 								/*NAVIGATION-MOBILE*/
+
+
+
+ 								/*NAVIGATION-DESKTOP*/
  								
 .navigation
 {
 	background-color: #e6e6e6; 
 }
 
+.nav-desktop
+{ 
+    height:80px; 
+    padding:0px; 
+}
+
+.site-logo
+{ 
+color:#1317e1;
+    line-height:80px;
+    padding:0px; 
+}
+
+
+.nav-desktop .menu-desktop 
+{ 
+        line-height:80px;
+
+}
+
+.menu >li>a 
+{ 
+    display:inline-block; 
+    
+}
 
 
 
@@ -42,8 +71,23 @@
 
  								/*BODY*/			
 
+.main 
+{ 
+		padding: 80px 0px; 
+}
 
 
 
+ 								/*FOOTER*/		
 
- 								/*FOOTER*/			
+footer 
+{ 
+    background-color:gray;
+    padding: 80px 0px; 
+
+}
+
+footer a 
+{ 
+display:block; 
+}

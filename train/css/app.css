@@ -1,0 +1,41 @@
+// demo styles
+
+
+
+
+
+.thumbnail 
+{ 
+width:150px !important;
+height:150px !important;
+background-color:gray;     
+
+}
+
+
+
+
+
+
+h4.header
+{ 
+text-align:center; 
+}
+
+{ 
+height:150px !important;
+    background-color:red !important;
+    background-image:url("https://image.unsplash.com/photo-1506012787146-f92b2d7d6d96")
+}
+
+
+/* body {
+  padding: 2rem;
+} */
+
+
+form
+{ 
+    margin:2% 20%; 
+   
+}

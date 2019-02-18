@@ -1,0 +1,107 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Foundation for Sites</title>
+      <link rel="stylesheet" href="css/foundation.css">
+      <link rel="stylesheet" href="css/app.css">
+   </head>
+   <body>
+      <div class="top-bar header-top" style="height:350px; background-image:url(https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96);   background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-position: center; background-size: cover; ">
+      </div>
+      <form onsubmit="return validateForm()" method="post">
+         <header>
+            <h4>Reservation Form</h4>
+         </header>
+         <div class="row">
+            <div class="small-12 medium-6 columns">
+               <label>Full Name
+               <input type="text" placeholder="Yaroslav" id="name">
+               </label>
+            </div>
+            <div class="small-12 medium-6 columns">
+               <label>Email
+               <input type="email" placeholder="y.kozak@acg.edu" id="email">
+               </label>
+            </div>
+         </div>
+         <div class="row">
+            <div class="small-12 medium-6 columns">
+               <label>
+                  Tour Package
+                  <select>
+                     <option value="Goa" id="goa">Goa</option>
+                     <option value="Ukraine" id="ukraine">Ukraine</option>
+                     <option value="Greece"id="greece">Greece</option>
+                     <option value="Mars" id="mars">Mars</option>
+                  </select>
+               </label>
+            </div>
+         </div>
+         <div class="medium-6 cell">
+            <label>Arrival Date
+            <input type="date" id="date">
+            </label>
+         </div>
+         <div class="medium-6 cell">
+            <label>Number of visitors
+            <input type="number" placeholder="How Many People" id="number-visitors">
+            </label>
+         </div>
+         <!--   <div class="row">
+            <div class="small-12 medium-6 columns">
+              <label>Company
+                <input type="text" placeholder="Alaska Inc." id="company">
+              </label>
+            </div>
+            <div class="small-12 medium-6 columns">
+              <label>Telephone
+                <input type="text" placeholder="+380666820062" id="telephone">
+              </label>
+            </div> -->
+         <fieldset class="large-7 cell" id="picture-check">
+            <legend>What Would you like to avail?</legend>
+            <input id="boarding" type="checkbox"><label for="checkbox1">Boarding</label>
+            <input id="fooding" type="checkbox"><label for="checkbox2">Fooding</label>
+            <input id="sightseeing" type="checkbox"><label for="checkbox3">Sightseeing</label>
+         </fieldset>
+         <div class="medium-6 cell">
+             
+             <div class="grid-x grid-margin-x">
+  <div class="cell small-4 "><img class="thumbnail" style="height:100px;width:100px;" src="https://images.unsplash.com/photo-1470214304380-aadaedcfff84" alt="Boarding"></div>
+  <div class="cell auto " ><img class="thumbnail" src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2" style="height:100px; width:100px;" alt="Photo of Uranus."></div>
+  <div class="cell auto " ><img class="thumbnail" src="https://images.unsplash.com/photo-1470016342826-876ea880d0be" style="height:100px; width:100px;" alt="Photo of Uranus."></div>
+</div>
+             
+             
+            <label>Discount Coupon
+            <input type="text" placeholder="Enter the promocode here" id="discount-coupon" onClick="validate(coupon)">
+            </label>
+             <span id="message"></span>
+<span id="err"></span>
+             
+             
+             
+             
+         </div>
+         <div class="medium-6 cell">
+            <label>Final Price
+            <input type="text" placeholder="Select Date and Options to Avail" id="final-price">
+            </label>
+         </div>
+         <legend>Terms and Conditions</legend>
+         <input type="radio" name="agree" value="Agree" id="agree" required><label for="agree">Agree</label>
+         <input type="radio" name="disagree" value="disagree" id="disagree"><label for="disagree">Disagree</label>
+         <br>
+         <input type="submit" class="button" id="submit" value="Register">
+      </form>
+      <script src="js/vendor/jquery.js"></script>
+      <script src="js/vendor/what-input.js"></script>
+      <script src="js/vendor/foundation.js"></script>
+      <script src="js/app.js"></script>
+   </body>
+</html>
