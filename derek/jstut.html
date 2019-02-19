@@ -21,18 +21,56 @@
 <body>
 
 	<p id="sayHello"></p>
+	
 
 
 
 	<script>
 		
-		var yourName = prompt("what is your name?"); 
-		if (yourName != null)
-			{ 
+
+
+		// var yourName = prompt("what is your name?"); 
+		// if (yourName != null)
+		// 	{ 
 			
-				document.getElementById("sayHello").innerHTML = "Hello " + yourName;
-			}else 
-			{alert("Please, enter a name next time!"); }
+		// 		document.getElementById("sayHello").innerHTML = "Hello " + yourName;
+		// 	}else 
+		// 	{alert("Please, enter a name next time!"); }
+
+		document.write("5+4 = ", 5+4, "<br/>");
+		document.write("5+4 = " + 5+4, "<br/>");
+
+		document.write("Max Number = " + Number.MAX_VALUE, "<br/>");
+		document.write("Min Number = " + Number.MIN_VALUE, "<br/>");
+
+		precisionTest = 0.1000000000000000000000001; 
+		document.write(precisionTest + 0.1000000000000000000000001 + "<br/>");
+
+		// 16 digits of precision
+
+		var balance = 1563.87; 
+		document.write("Monthly Payment: ", (balance/12).toFixed(2), "<br />"); 
+
+		var randNum = 5; 
+		document.write("randNum =++ ", randNum++, "<br />");
+		document.write("randNum ++= ", ++randNum, "<br />"); 
+		document.write("randNum  /= ", randNum/=5, "<br />"); 
+
+		document.write("Math.E = ", Math.E, "<br />")
+
+		document.write("Random # (1-100) = ", Math.floor((Math.random() *10 )+1), "<br />"); 
+
+
+		document.write("Converted String:", Number("3.14"),"<br />")
+		document.write("Converted String:", parseInt("3.14"),"<br />")
+		document.write("Converted String:", parseFloat("3.14"),"<br />")
+
+
+
+
+
+
+		
 
 	</script>
 
