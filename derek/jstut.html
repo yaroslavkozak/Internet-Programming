@@ -132,13 +132,116 @@
 		var numbers = [3,4,3,2,5]; 
 		numbers.sort(function(x,y){return x-y}); 
 
-		document.write("Num Array: " + numbers); 
+		document.write("Num Array: " + numbers + "<br/ >"); 
 
 
 		//concat, pop (remove last), push (add to end), shift, unshift
 		for(i = 0, i<tomSmith.length; i++;){
 			document.write(tomSmith[i], "<br/ >");
  		}
+
+
+ 		////////////////////////////////
+
+ 		function inArray(arrayToCheck, value){ 
+ 			for(let i = 0, length1 = arrayToCheck.length; i < length1; i++){
+ 				if (arrayToCheck[i] === value) { 
+ 					return true; 
+ 				}
+ 			}
+ 			return false; 
+ 		}
+ 		var randArray = [1,2,3,4,5]; 
+ 		document.write("In Array: ", inArray(randArray, 4), "<br />"); 
+
+
+
+ 		function times2_(num){ 
+			var var2 = 2; 
+			return num*var2;  
+ 		}
+
+
+
+
+ 		function times3(num){ 
+			var var2 = 3; 
+			return num*var2;  
+ 		}
+
+
+ 		function multiply(func, num){ 
+			 
+			return func(num);  
+ 		}
+
+
+		document.write("2*15= ", multiply(times2_, 15), "<br />"); 
+		document.write("3*15= ", multiply(times3, 15), "<br />"); 
+
+
+
+
+		var triple = function(num){ 
+			return num*3;  
+		}
+
+		document.write("3*45= ", multiply(triple, 45), "<br />"); 
+
+
+
+		function getSum() { 
+			var sum = 0; 
+			for(let i = 0, length1 = arguments.length; i < length1; i++){
+				sum += arguments[1];
+			}
+			return sum; 
+		}
+
+		document.write("Sum = ", getSum(1,2,3,4,5,6), "<br />")
+
+
+
+
+		function times22(theArray){ 
+
+			var newArray = [];
+			for(let i = 0, length1 = theArray.length; i < length1; i++){
+				newArray.push(theArray[i]*2); 
+			}
+			return newArray; 
+
+
+		}
+
+
+		document.write("Array Doubled = ", times22([1,2,3,4,5,6]).toString(), "<br />");
+
+
+
+		function factorial(num){ 
+			if (num<=1){ 
+				return 1; 
+			}else { 
+				return num*factorial(num-1); 
+			}
+		}
+
+		document.write("Factorial of 4 = ", factorial(4), "<br />")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
