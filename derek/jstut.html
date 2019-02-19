@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script> src="jstut.js"</script>
+	<style type="text/css">
+		body {font-size:1.6em; }
+		.hidden{display:none;}
+		.show{display:inline !important;}
+		button 
+		{ 
+			border:2px solid black;background-color: #e5e4e2;
+			font-size:.5em; font-weight:bold; color:black;
+			padding:.8em 2em;
+			margin-top:.4em;
+		}
+	</style>
+</head>
+<body>
+
+	<p id="sayHello"></p>
+
+
+
+	<script>
+		
+		var yourName = prompt("what is your name?"); 
+		if (yourName != null)
+			{ 
+			
+				document.getElementById("sayHello").innerHTML = "Hello " + yourName;
+			}else 
+			{alert("Please, enter a name next time!"); }
+
+	</script>
+
+
+
+	
+</body>
+</html>
