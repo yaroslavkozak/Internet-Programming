@@ -65,6 +65,84 @@
 		document.write("Converted String:", parseInt("3.14"),"<br />")
 		document.write("Converted String:", parseFloat("3.14"),"<br />")
 
+		var randStr = "A long" + "string that" + "goes on and on";
+		document.write("String Length = ", randStr.length + "<br />");
+		document.write("Index for \"goes\" :", randStr.indexOf("goes") + "<br />");
+		document.write(randStr.slice(17,28) + "<br />");
+		document.write(randStr.slice(17) + "<br />");
+		document.write(randStr.replace("and on", "forever") + "<br />");
+
+
+		// trim(); 
+		// toLowercase(); 
+
+		var strToStyle = "Random String"; // to style Strings with JS (even make links)
+
+		
+
+
+
+		// === : equals and the same 
+
+		// If and Switch and While statements 
+
+
+		// (condition)
+
+		var age =25; 
+  		var canIVote = (age>=18)? true:false;
+  		document.write(canIVote + "<br />"); 
+
+
+
+  		// loops
+
+  		for (j=0,j<=20;j++;){
+  			if ((j%2)===0)
+  				{ 
+  					continue; 
+  				}
+
+		}
+
+			// if (j===15){break;}
+			// document.write(j + "<br />")
+
+
+
+		var customer = {name : "Bob Thomas", adress: "123 Main", balance: 50.50};
+			for (k in customer)
+			{ 
+				document.write(customer[k] + "<br />")
+			} 
+
+
+
+		var tomSmith = ["Tom Smith", "123 Main", 120.50]; 
+		document.write("1st Index", tomSmith[0], "<br />"); 
+		tomSmith[3]="tsmith@gmail.com";
+		tomSmith.splice(2,1, "Pittsburgh", "PA"); 
+		tomSmith.splice(4,1); 
+		document.write("Array: ", tomSmith.valueOf(), "<br />");
+		document.write("Array: ", tomSmith.join(), "<br />")
+
+		delete tomSmith[3]; 
+		tomSmith.sort(); 
+
+		var numbers = [3,4,3,2,5]; 
+		numbers.sort(function(x,y){return x-y}); 
+
+		document.write("Num Array: " + numbers); 
+
+
+		//concat, pop (remove last), push (add to end), shift, unshift
+		for(i = 0, i<tomSmith.length; i++;){
+			document.write(tomSmith[i], "<br/ >");
+ 		}
+
+
+
+
 
 
 
