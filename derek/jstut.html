@@ -269,15 +269,15 @@
 
 		<a href="JavaScript.void(0)" onmouseover="alert('Hello');">Say Hello</a><br/> -->
 
-		<a href="#" onmouseover="this.style.color='red';"
+		<!-- <a href="#" onmouseover="this.style.color='red';"
 								   onmouseout="this.style.color='blue';"
 								   ondblclick="this.text='You Double Clicked ME'"
 								   onmousedown="this.text='Dont Press too Hard'"
 								   onmouseup="this.text='Thank You'" 
-								   >Make Me Red</a><br/>
+								   >Make Me Red</a><br/> -->
 
 
-	   <input type="text" id="randInput" onchange=" var dataEntered=document.getElementById('randInput').value; alert('user Typed: ' + dataEntered)">
+	   <!-- <input type="text" id="randInput" onchange=" var dataEntered=document.getElementById('randInput').value; alert('user Typed: ' + dataEntered)">
 
 
 	   <form action="#" id="sampleForm">
@@ -295,96 +295,226 @@
 	   <img src="https://brandmark.io/logo-rank/random/pepsi.png" style="width:10%;height: 10%;" id="logo"><br />
 
 	   <button id="logoButton">Get Logo</button><br />
-	   <button id = "clearInputs">Clear</button>
+	   <button id = "clearInputs">Clear</button> -->
 
 
-	   <input id="mouseInput" type="text" size="30" name=""><br />
+	   <!-- <input id="mouseInput" type="text" size="30" name=""><br />
 
 	   Mouse X: <input type="text" id="mouseX" name=""><br />
-	   Mouse Y: <input type="text" id="mouseY" name=""><br />
+	   Mouse Y: <input type="text" id="mouseY" name=""><br /> -->
 
 
 
 	   <script>
 	   	
-	   		function getChar(event){ 
-	   			if(event.which=null){ 
-	   				return String.fromCharCode(event.keyCode);
-	   			}else if (event.which !=0 && event.charCode !=0){ 
-	   				return String.fromCharCode(event.which); 
-	   			}else { 
-	   				return null; 
-	   			}
-	   		}
+	   		// function getChar(event){ 
+	   		// 	if(event.which=null){ 
+	   		// 		return String.fromCharCode(event.keyCode);
+	   		// 	}else if (event.which !=0 && event.charCode !=0){ 
+	   		// 		return String.fromCharCode(event.which); 
+	   		// 	}else { 
+	   		// 		return null; 
+	   		// 	}
+	   		// }
 
 
-	   		document.getElementById('charInput').onkeypress=function(event){ 
-	   			var char = getChar(event || window.event) 
-	   				if (!char) return false; 
-	   				document.getElementById('keyData').innerHTML = char + " was Clicked"; return true; 
+	   		// document.getElementById('charInput').onkeypress=function(event){ 
+	   		// 	var char = getChar(event || window.event) 
+	   		// 		if (!char) return false; 
+	   		// 		document.getElementById('keyData').innerHTML = char + " was Clicked"; return true; 
 	   			
-	   		}
+	   		// }
 
 
-	   		document.getElementById('charInput').onfocus = function(event){ 
-	   			document.getElementById('keyData').innerHTML="Input Gained Focus"; 
-	   		}		
+	   		// document.getElementById('charInput').onfocus = function(event){ 
+	   		// 	document.getElementById('keyData').innerHTML="Input Gained Focus"; 
+	   		// }		
 
 
-	   		document.getElementById('charInput').onselect = function(event){ 
-	   			document.getElementById('keyData').innerHTML="Text Selected"; 
-	   		}	
+	   		// document.getElementById('charInput').onselect = function(event){ 
+	   		// 	document.getElementById('keyData').innerHTML="Text Selected"; 
+	   		// }	
 
 
-	   			document.getElementById('logoButton').onclick = function(event){ 
-	   			document.getElementById('logo').className="show"; 
-	   		}	
+	   		// 	document.getElementById('logoButton').onclick = function(event){ 
+	   		// 	document.getElementById('logo').className="show"; 
+	   		// }	
 
 
-	   			document.getElementById('logo').onmouseover = function(event){ 
-	   			document.getElementById('logo').src="https://media.keyshot.com/uploads/2018/10/keyshot-icon-256.png";
-	   			document.getElementById('mouseInput').value = "Mouse Over Image";  
-	   		}	
+	   		// 	document.getElementById('logo').onmouseover = function(event){ 
+	   		// 	document.getElementById('logo').src="https://media.keyshot.com/uploads/2018/10/keyshot-icon-256.png";
+	   		// 	document.getElementById('mouseInput').value = "Mouse Over Image";  
+	   		// }	
 
 
-	   			document.getElementById('logo').onmouseout = function(event){ 
-	   			document.getElementById('logo').src="https://brandmark.io/logo-rank/random/pepsi.png";
-	   			document.getElementById('mouseInput').value = "Mouse Left Image";  
-	   		}	
+	   		// 	document.getElementById('logo').onmouseout = function(event){ 
+	   		// 	document.getElementById('logo').src="https://brandmark.io/logo-rank/random/pepsi.png";
+	   		// 	document.getElementById('mouseInput').value = "Mouse Left Image";  
+	   		// }	
 
 
-	   			document.getElementById('logoButton').onclick=function(event){ 
-	   			document.getElementById('logo').className="hidden"; 	
-	   			}
-
-
-
-	   		document.body.onmousemove = function(e){ 
-	   			e=e || window.event; 
-	   			var pageX = e.pageX; 
-	   			var pageY = e.pageY;
-
-	   			if (pageX === undefined){ 
-	   				pageX = e.clientX + document.body.scrollLeft + document.document.element.ScrollLeft; 
-	   				pageX = e.clientY + document.body.scrollTop + document.document.element.ScrollTop; 
-	   			} 
-
-	   			document.getElementById('mouseX').value = pageX; 
-	   			document.getElementById('mouseY').value = pageY; 
-	   		};
+	   		// 	document.getElementById('logoButton').onclick=function(event){ 
+	   		// 	document.getElementById('logo').className="hidden"; 	
+	   		// 	}
 
 
 
-	   		document.getElementById('clearInputs').onclick = function(event){ 
-	   			var inputElements = document.getElementsByTagName('input'); 
-	   			for(var i = 0; i < inputElements.length; i++){
-	   				if (inputElements[i].type == "text"){ 
-	   					inputElements[i].value = ""; 
-	   				}
-	   			}
-	   		}
+	   		// document.body.onmousemove = function(e){ 
+	   		// 	e=e || window.event; 
+	   		// 	var pageX = e.pageX; 
+	   		// 	var pageY = e.pageY;
+
+	   		// 	if (pageX === undefined){ 
+	   		// 		pageX = e.clientX + document.body.scrollLeft + document.document.element.ScrollLeft; 
+	   		// 		pageX = e.clientY + document.body.scrollTop + document.document.element.ScrollTop; 
+	   		// 	} 
+
+	   		// 	document.getElementById('mouseX').value = pageX; 
+	   		// 	document.getElementById('mouseY').value = pageY; 
+	   		// };
 
 
+
+	   		// document.getElementById('clearInputs').onclick = function(event){ 
+	   		// 	var inputElements = document.getElementsByTagName('input'); 
+	   		// 	for(var i = 0; i < inputElements.length; i++){
+	   		// 		if (inputElements[i].type == "text"){ 
+	   		// 			inputElements[i].value = ""; 
+	   		// 		}
+	   		// 	}
+	   		// }
+
+
+
+
+	   </script>
+
+<!-- 	   <div id="sampleDiv">
+	   	This is the cool Div
+
+	   	This is the cool Div
+
+	   	This is the cool Div
+
+	   	This is the cool Div
+
+	   	This is the cool Div
+
+	   	This is the cool Div
+
+	   	This is the cool Div
+
+	   	This is the cool Div
+
+	   	This is the cool Div
+
+	   	This is the cool Div
+
+
+	   </div>
+
+
+
+	   <button id="chgBkColor">Background Color</button>
+	   <button id="chgBkImg">Background Image</button>
+	   <button id="chgBorderStyle">Border Style</button>
+	   <button id="chgBorderWidth">Border Width</button>
+	   <button id="chgBorderColor">Border Color</button>
+ -->
+
+
+
+	   <div>
+	   	
+	   	This is the cool Div <br>
+
+	   	<p>This is the cool Div</p><br>
+
+	   	This is the cool Div<br>
+	   	
+	   	<b>	   	This is the cool Div</b><br>
+
+	   	This is the cool Div<br>
+
+	   	This is the cool Div<br>
+
+	   	<em>This is the cool Div</em><br>
+
+	   	This is the cool Div<br>
+
+	   	This is the cool Div<br>
+
+	   	This is the cool Div<br>
+
+
+	   </div>
+
+	   <img src="https://brandmark.io/logo-rank/random/pepsi.png" id="logo" alt="Logo" height="100px" width="100px"><br>
+
+	   <button id="goToGoogle">goToGoogle</button><br>
+	   <button id="forwardPage">forwardPage</button><br>
+	   <button id="backPage">backPage</button><br>
+	   <button id="reload">reload</button><br>
+
+
+	   <!-- <script>
+	   	
+	   	// document.getElementById('chgBkColor').onclick = function(event){ 
+	   	// 	document.getElementById('sampleDiv').style.backgroundColor = "red"; 
+	   	// }
+
+
+	   	// 	document.getElementById('chgBkImg').onclick = function(event){ 
+	   	// 	document.getElementById('sampleDiv').style.backgroundImage = "url('https://brandmark.io/logo-rank/random/pepsi.png')"; 
+	   	// }
+
+	   	// 	document.getElementById('chgBorderStyle').onclick = function(event){ 
+	   	// 	document.getElementById('sampleDiv').style.borderStyle = "solid"; 
+	   	// }
+
+	   	// 	document.getElementById('chgBorderWidth').onclick = function(event){ 
+	   	// 	document.getElementById('sampleDiv').style.borderWidth = "2px"; 
+	   	// }
+
+	   	// 	document.getElementById('chgBorderColor').onclick = function(event){ 
+	   	// 	document.getElementById('sampleDiv').style.borderColor = "red"; 
+	   	// }	   
+
+
+	   	document.write("Current URL: ", window.location.href, "<br />"); 
+	   	document.write("Current HOST: ", window.location.hostname, "<br />");		 
+	   	document.write("Current Path: ", window.location.href, "<br />");	
+
+
+	   	document.getElementById('goToGoogle').onclick=function(event){ 
+	   		window.location.href = "google.com"
+	   	}	
+
+	   	document.getElementById('forwardPage').onclick=function(event){ 
+	   		history.forward(); 
+	   	}
+
+	   	document.getElementById('BackPage').onclick=function(event){ 
+	   		history.back(); 
+	   	}
+
+	   	document.getElementById('reload').onclick=function(event){ 
+			window.location.reload(true); 		
+		   	}
+
+
+	   	// history.go(-2)
+
+	   </script> -->
+
+
+
+	   <script >
+	   	
+
+
+var pElements = document.getElementsByTagName('p'); 
+pElements[1].style.backgroundcolor = 'red'; 
 
 
 	   </script>
