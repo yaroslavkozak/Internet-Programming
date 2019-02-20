@@ -20,8 +20,8 @@
 </head>
 <body>
 
-	<p id="sayHello"></p>
-	
+<!-- 	<p id="sayHello"></p>
+ -->	
 
 
 
@@ -37,46 +37,46 @@
 		// 	}else 
 		// 	{alert("Please, enter a name next time!"); }
 
-		document.write("5+4 = ", 5+4, "<br/>");
-		document.write("5+4 = " + 5+4, "<br/>");
+		// document.write("5+4 = ", 5+4, "<br/>");
+		// document.write("5+4 = " + 5+4, "<br/>");
 
-		document.write("Max Number = " + Number.MAX_VALUE, "<br/>");
-		document.write("Min Number = " + Number.MIN_VALUE, "<br/>");
+		// document.write("Max Number = " + Number.MAX_VALUE, "<br/>");
+		// document.write("Min Number = " + Number.MIN_VALUE, "<br/>");
 
-		precisionTest = 0.1000000000000000000000001; 
-		document.write(precisionTest + 0.1000000000000000000000001 + "<br/>");
+		// precisionTest = 0.1000000000000000000000001; 
+		// document.write(precisionTest + 0.1000000000000000000000001 + "<br/>");
 
-		// 16 digits of precision
+		// // 16 digits of precision
 
-		var balance = 1563.87; 
-		document.write("Monthly Payment: ", (balance/12).toFixed(2), "<br />"); 
+		// var balance = 1563.87; 
+		// document.write("Monthly Payment: ", (balance/12).toFixed(2), "<br />"); 
 
-		var randNum = 5; 
-		document.write("randNum =++ ", randNum++, "<br />");
-		document.write("randNum ++= ", ++randNum, "<br />"); 
-		document.write("randNum  /= ", randNum/=5, "<br />"); 
+		// var randNum = 5; 
+		// document.write("randNum =++ ", randNum++, "<br />");
+		// document.write("randNum ++= ", ++randNum, "<br />"); 
+		// document.write("randNum  /= ", randNum/=5, "<br />"); 
 
-		document.write("Math.E = ", Math.E, "<br />")
+		// document.write("Math.E = ", Math.E, "<br />")
 
-		document.write("Random # (1-100) = ", Math.floor((Math.random() *10 )+1), "<br />"); 
+		// document.write("Random # (1-100) = ", Math.floor((Math.random() *10 )+1), "<br />"); 
 
 
-		document.write("Converted String:", Number("3.14"),"<br />")
-		document.write("Converted String:", parseInt("3.14"),"<br />")
-		document.write("Converted String:", parseFloat("3.14"),"<br />")
+		// document.write("Converted String:", Number("3.14"),"<br />")
+		// document.write("Converted String:", parseInt("3.14"),"<br />")
+		// document.write("Converted String:", parseFloat("3.14"),"<br />")
 
-		var randStr = "A long" + "string that" + "goes on and on";
-		document.write("String Length = ", randStr.length + "<br />");
-		document.write("Index for \"goes\" :", randStr.indexOf("goes") + "<br />");
-		document.write(randStr.slice(17,28) + "<br />");
-		document.write(randStr.slice(17) + "<br />");
-		document.write(randStr.replace("and on", "forever") + "<br />");
+		// var randStr = "A long" + "string that" + "goes on and on";
+		// document.write("String Length = ", randStr.length + "<br />");
+		// document.write("Index for \"goes\" :", randStr.indexOf("goes") + "<br />");
+		// document.write(randStr.slice(17,28) + "<br />");
+		// document.write(randStr.slice(17) + "<br />");
+		// document.write(randStr.replace("and on", "forever") + "<br />");
 
 
 		// trim(); 
 		// toLowercase(); 
 
-		var strToStyle = "Random String"; // to style Strings with JS (even make links)
+		// var strToStyle = "Random String"; // to style Strings with JS (even make links)
 
 		
 
@@ -89,149 +89,154 @@
 
 		// (condition)
 
-		var age =25; 
-  		var canIVote = (age>=18)? true:false;
-  		document.write(canIVote + "<br />"); 
+		// var age =25; 
+  // 		var canIVote = (age>=18)? true:false;
+  // 		document.write(canIVote + "<br />"); 
 
 
 
   		// loops
 
-  		for (j=0,j<=20;j++;){
-  			if ((j%2)===0)
-  				{ 
-  					continue; 
-  				}
+  // 		for (j=0,j<=20;j++;){
+  // 			if ((j%2)===0)
+  // 				{ 
+  // 					continue; 
+  // 				}
 
-		}
+		// }
 
-			// if (j===15){break;}
-			// document.write(j + "<br />")
-
-
-
-		var customer = {name : "Bob Thomas", adress: "123 Main", balance: 50.50};
-			for (k in customer)
-			{ 
-				document.write(customer[k] + "<br />")
-			} 
+		// 	// if (j===15){break;}
+		// 	// document.write(j + "<br />")
 
 
 
-		var tomSmith = ["Tom Smith", "123 Main", 120.50]; 
-		document.write("1st Index", tomSmith[0], "<br />"); 
-		tomSmith[3]="tsmith@gmail.com";
-		tomSmith.splice(2,1, "Pittsburgh", "PA"); 
-		tomSmith.splice(4,1); 
-		document.write("Array: ", tomSmith.valueOf(), "<br />");
-		document.write("Array: ", tomSmith.join(), "<br />")
+		// var customer = {name : "Bob Thomas", adress: "123 Main", balance: 50.50};
+		// 	for (k in customer)
+		// 	{ 
+		// 		document.write(customer[k] + "<br />")
+		// 	} 
 
-		delete tomSmith[3]; 
-		tomSmith.sort(); 
 
-		var numbers = [3,4,3,2,5]; 
-		numbers.sort(function(x,y){return x-y}); 
 
-		document.write("Num Array: " + numbers + "<br/ >"); 
+		// var tomSmith = ["Tom Smith", "123 Main", 120.50]; 
+		// document.write("1st Index", tomSmith[0], "<br />"); 
+		// tomSmith[3]="tsmith@gmail.com";
+		// tomSmith.splice(2,1, "Pittsburgh", "PA"); 
+		// tomSmith.splice(4,1); 
+		// document.write("Array: ", tomSmith.valueOf(), "<br />");
+		// document.write("Array: ", tomSmith.join(), "<br />")
+
+		// delete tomSmith[3]; 
+		// tomSmith.sort(); 
+
+		// var numbers = [3,4,3,2,5]; 
+		// numbers.sort(function(x,y){return x-y}); 
+
+		// document.write("Num Array: " + numbers + "<br/ >"); 
 
 
 		//concat, pop (remove last), push (add to end), shift, unshift
-		for(i = 0, i<tomSmith.length; i++;){
-			document.write(tomSmith[i], "<br/ >");
- 		}
+		// for(i = 0, i<tomSmith.length; i++;){
+		// 	document.write(tomSmith[i], "<br/ >");
+ 	// 	}
 
 
  		////////////////////////////////
 
- 		function inArray(arrayToCheck, value){ 
- 			for(let i = 0, length1 = arrayToCheck.length; i < length1; i++){
- 				if (arrayToCheck[i] === value) { 
- 					return true; 
- 				}
- 			}
- 			return false; 
- 		}
- 		var randArray = [1,2,3,4,5]; 
- 		document.write("In Array: ", inArray(randArray, 4), "<br />"); 
+ 	// 	function inArray(arrayToCheck, value){ 
+ 	// 		for(let i = 0, length1 = arrayToCheck.length; i < length1; i++){
+ 	// 			if (arrayToCheck[i] === value) { 
+ 	// 				return true; 
+ 	// 			}
+ 	// 		}
+ 	// 		return false; 
+ 	// 	}
+ 	// 	var randArray = [1,2,3,4,5]; 
+ 	// 	document.write("In Array: ", inArray(randArray, 4), "<br />"); 
 
 
 
- 		function times2_(num){ 
-			var var2 = 2; 
-			return num*var2;  
- 		}
+ 	// 	function times2_(num){ 
+		// 	var var2 = 2; 
+		// 	return num*var2;  
+ 	// 	}
 
 
 
 
- 		function times3(num){ 
-			var var2 = 3; 
-			return num*var2;  
- 		}
+ 	// 	function times3(num){ 
+		// 	var var2 = 3; 
+		// 	return num*var2;  
+ 	// 	}
 
 
- 		function multiply(func, num){ 
+ 	// 	function multiply(func, num){ 
 			 
-			return func(num);  
- 		}
+		// 	return func(num);  
+ 	// 	}
 
 
-		document.write("2*15= ", multiply(times2_, 15), "<br />"); 
-		document.write("3*15= ", multiply(times3, 15), "<br />"); 
-
-
-
-
-		var triple = function(num){ 
-			return num*3;  
-		}
-
-		document.write("3*45= ", multiply(triple, 45), "<br />"); 
-
-
-
-		function getSum() { 
-			var sum = 0; 
-			for(let i = 0, length1 = arguments.length; i < length1; i++){
-				sum += arguments[1];
-			}
-			return sum; 
-		}
-
-		document.write("Sum = ", getSum(1,2,3,4,5,6), "<br />")
+		// document.write("2*15= ", multiply(times2_, 15), "<br />"); 
+		// document.write("3*15= ", multiply(times3, 15), "<br />"); 
 
 
 
 
-		function times22(theArray){ 
+		// var triple = function(num){ 
+		// 	return num*3;  
+		// }
 
-			var newArray = [];
-			for(let i = 0, length1 = theArray.length; i < length1; i++){
-				newArray.push(theArray[i]*2); 
-			}
-			return newArray; 
-
-
-		}
-
-
-		document.write("Array Doubled = ", times22([1,2,3,4,5,6]).toString(), "<br />");
+		// document.write("3*45= ", multiply(triple, 45), "<br />"); 
 
 
 
-		function factorial(num){ 
-			if (num<=1){ 
-				return 1; 
-			}else { 
-				return num*factorial(num-1); 
-			}
-		}
+		// function getSum() { 
+		// 	var sum = 0; 
+		// 	for(let i = 0, length1 = arguments.length; i < length1; i++){
+		// 		sum += arguments[1];
+		// 	}
+		// 	return sum; 
+		// }
 
-		document.write("Factorial of 4 = ", factorial(4), "<br />")
+		// document.write("Sum = ", getSum(1,2,3,4,5,6), "<br />")
 
 
 
 
+		// function times22(theArray){ 
+
+		// 	var newArray = [];
+		// 	for(let i = 0, length1 = theArray.length; i < length1; i++){
+		// 		newArray.push(theArray[i]*2); 
+		// 	}
+		// 	return newArray; 
+
+
+		// }
+
+
+		// document.write("Array Doubled = ", times22([1,2,3,4,5,6]).toString(), "<br />");
+
+
+
+		// function factorial(num){ 
+		// 	if (num<=1){ 
+		// 		return 1; 
+		// 	}else { 
+		// 		return num*factorial(num-1); 
+		// 	}
+		// }
+
+		// document.write("Factorial of 4 = ", factorial(4), "<br />")
+
+
+
+
+
+		// function openAlert(mess)
+		// { 
+		// 	alert(mess); 
+		// }
 
 
 
@@ -254,6 +259,142 @@
 		
 
 	</script>
+
+<!-- 		<a href="JavaScript.void(0)" onClick="alert('Hello');">Say Hello</a><br/>
+
+		<a href="" onclick="alert('Hello');">Say Hello</a><br/>
+
+
+		<a href="JavaScript.void(0)" onclick="openAlert('hello, how are you?');"> Say Something</a><br/>
+
+		<a href="JavaScript.void(0)" onmouseover="alert('Hello');">Say Hello</a><br/> -->
+
+		<a href="#" onmouseover="this.style.color='red';"
+								   onmouseout="this.style.color='blue';"
+								   ondblclick="this.text='You Double Clicked ME'"
+								   onmousedown="this.text='Dont Press too Hard'"
+								   onmouseup="this.text='Thank You'" 
+								   >Make Me Red</a><br/>
+
+
+	   <input type="text" id="randInput" onchange=" var dataEntered=document.getElementById('randInput').value; alert('user Typed: ' + dataEntered)">
+
+
+	   <form action="#" id="sampleForm">
+	   	
+	   	<label>Test 
+	   		<input type="text" name="" id="charInput"> </label>
+	   	
+	   	<p id="keyData">Key Data Here: </p>
+	   	<input type="submit" name="" value="Submit">
+	   	<input type="reset" name="" value="Reset">
+	   	<input type="reset" name="">
+
+	   </form>
+
+	   <img src="https://brandmark.io/logo-rank/random/pepsi.png" style="width:10%;height: 10%;" id="logo"><br />
+
+	   <button id="logoButton">Get Logo</button><br />
+	   <button id = "clearInputs">Clear</button>
+
+
+	   <input id="mouseInput" type="text" size="30" name=""><br />
+
+	   Mouse X: <input type="text" id="mouseX" name=""><br />
+	   Mouse Y: <input type="text" id="mouseY" name=""><br />
+
+
+
+	   <script>
+	   	
+	   		function getChar(event){ 
+	   			if(event.which=null){ 
+	   				return String.fromCharCode(event.keyCode);
+	   			}else if (event.which !=0 && event.charCode !=0){ 
+	   				return String.fromCharCode(event.which); 
+	   			}else { 
+	   				return null; 
+	   			}
+	   		}
+
+
+	   		document.getElementById('charInput').onkeypress=function(event){ 
+	   			var char = getChar(event || window.event) 
+	   				if (!char) return false; 
+	   				document.getElementById('keyData').innerHTML = char + " was Clicked"; return true; 
+	   			
+	   		}
+
+
+	   		document.getElementById('charInput').onfocus = function(event){ 
+	   			document.getElementById('keyData').innerHTML="Input Gained Focus"; 
+	   		}		
+
+
+	   		document.getElementById('charInput').onselect = function(event){ 
+	   			document.getElementById('keyData').innerHTML="Text Selected"; 
+	   		}	
+
+
+	   			document.getElementById('logoButton').onclick = function(event){ 
+	   			document.getElementById('logo').className="show"; 
+	   		}	
+
+
+	   			document.getElementById('logo').onmouseover = function(event){ 
+	   			document.getElementById('logo').src="https://media.keyshot.com/uploads/2018/10/keyshot-icon-256.png";
+	   			document.getElementById('mouseInput').value = "Mouse Over Image";  
+	   		}	
+
+
+	   			document.getElementById('logo').onmouseout = function(event){ 
+	   			document.getElementById('logo').src="https://brandmark.io/logo-rank/random/pepsi.png";
+	   			document.getElementById('mouseInput').value = "Mouse Left Image";  
+	   		}	
+
+
+	   			document.getElementById('logoButton').onclick=function(event){ 
+	   			document.getElementById('logo').className="hidden"; 	
+	   			}
+
+
+
+	   		document.body.onmousemove = function(e){ 
+	   			e=e || window.event; 
+	   			var pageX = e.pageX; 
+	   			var pageY = e.pageY;
+
+	   			if (pageX === undefined){ 
+	   				pageX = e.clientX + document.body.scrollLeft + document.document.element.ScrollLeft; 
+	   				pageX = e.clientY + document.body.scrollTop + document.document.element.ScrollTop; 
+	   			} 
+
+	   			document.getElementById('mouseX').value = pageX; 
+	   			document.getElementById('mouseY').value = pageY; 
+	   		};
+
+
+
+	   		document.getElementById('clearInputs').onclick = function(event){ 
+	   			var inputElements = document.getElementsByTagName('input'); 
+	   			for(var i = 0; i < inputElements.length; i++){
+	   				if (inputElements[i].type == "text"){ 
+	   					inputElements[i].value = ""; 
+	   				}
+	   			}
+	   		}
+
+
+
+
+	   </script>
+
+
+
+
+
+
+
 
 
 
