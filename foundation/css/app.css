@@ -1,5 +1,10 @@
 								/*GENERAL*/
 
+
+* 	{ 
+
+outline: none; 
+ }
 .wrap
 {
 	width:90%;
@@ -7,9 +12,74 @@
 	margin: 0px auto;
 }
 
+.off-canvas-wraper 
+{ 
+	background-color: #e6e6e6; 
+
+}
+
 
  								/*NAVIGATION-MOBILE*/
 
+
+
+.title-bar
+{ 
+
+	background-color: #222; 
+	color:#e6e6e6;
+	height: 60px;
+	padding-top: 10px; 
+}
+
+.menu-icon:hover::after{ 
+
+	color:#222;
+
+ }
+
+
+#mobile-menu { 
+
+background-color: #222;
+color:#e6e6e6;
+
+ }
+
+ul.menu-mobile-data li a{ 
+color: rgba(255,255,255,.6);
+font-weight: bold;
+line-height: 2;
+
+ }
+
+
+ ul.menu-mobile-data li a:hover{ 
+color: rgba(255,255,255,.8);
+
+
+ }
+
+ ul.menu-mobile-data { 
+list-style-type: none;
+
+
+  }
+
+
+
+
+ .title-bar .menu-icon button
+ { 
+	color:#222 !important;
+ }
+
+
+ .js-off-canvas-overlay
+ { 
+	background-color: rgba(0,0,0,.65);
+
+ }
 
 
  								/*NAVIGATION-DESKTOP*/
@@ -27,7 +97,7 @@
 
 .site-logo
 { 
-color:#1317e1;
+color:#333;
     line-height:80px;
     padding:0px; 
 }
@@ -41,7 +111,17 @@ color:#1317e1;
 
 .menu >li>a 
 { 
-    display:inline-block; 
+    display:inline-block;
+    line-height:80px;
+    padding-top:0px;
+    padding-bottom: 0px;
+    color:#333;
+    
+}
+
+.menu >li>a:hover
+{ 
+	background-color: rgba(255,255,255,.5); 
     
 }
 
@@ -90,4 +170,28 @@ footer
 footer a 
 { 
 display:block; 
+}
+
+
+
+
+
+@media (max-width: 639px)
+{ 
+	.nav-desktop { 
+		display:none;
+	 }
+
+	
+}
+
+
+
+@media (max-width: 875px)
+{ 
+	.hero h1, .hero p { 
+		width: 100%;
+	 }
+
+	
 }
